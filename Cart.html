@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag — CEIN.</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- ANNOUNCEMENT BAR (ЧЁРНАЯ ПОЛОСА) -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p>
+                Complimentary U.S. No-Rush Shipping on orders of $95 or more.
+                <a href="#">Shop now</a>
+            </p>
+        </div>
+    </div>
+
+    <!--  HEADER (ШАПКА) -->
+    <header class="navbar">
+        <div class="container">
+            <button class="burger" id="burgerBtn">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img src="img/Logo.svg" alt="CEIN.">
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Journal</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <button class="icon-btn" aria-label="Поиск">
+                    <img src="img/MagnifyingGlass.svg" alt="Поиск" width="22" height="22">
+                </button>
+
+                <a href="#" class="stores-link desktop-only">Stores</a>
+
+                <button class="icon-btn desktop-only" aria-label="Профиль">
+                    <img src="img/UserCircle.svg" alt="Профиль" width="22" height="22">
+                </button>
+
+                <button class="icon-btn icon-with-count" aria-label="Избранное">
+                    <img src="img/Heart.svg" alt="Избранное" width="22" height="22">
+                    <span class="count">0</span>
+                </button>
+
+                <a href="cart.html" class="icon-btn icon-with-count" aria-label="Корзина">
+                    <img src="img/Bag.svg" alt="Корзина" width="22" height="22">
+                    <span class="count" id="bagCount">2</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SHOPPING BAG -->
+    <section class="cart-page">
+        <div class="container">
+            <h1 class="cart-title">Shopping Bag</h1>
+
+            <div class="cart-layout">
+                <div class="cart-items" id="cartItems">
+
+                    <!-- Товар 1 -->
+                    <div class="cart-item" data-price="248">
+                        <button class="cart-item-remove" aria-label="Удалить товар">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                        </button>
+                        <p class="cart-item-name">Alpaca Wool Crewneck Sweater</p>
+                        <p class="cart-item-variant">Beige</p>
+                        <div class="cart-item-image">
+                            <img src="img/shop2.jpg" alt="Alpaca Wool Crewneck Sweater">
+                        </div>
+                        <div class="cart-item-qty">
+                            <button class="qty-btn qty-minus" aria-label="Уменьшить количество">−</button>
+                            <span class="qty-value">1</span>
+                            <button class="qty-btn qty-plus" aria-label="Увеличить количество">+</button>
+                        </div>
+                        <div class="cart-item-subtotal">
+                            <span class="label">Subtotal</span>
+                            <span class="value">$248</span>
+                        </div>
+                    </div>
+
+                    <!-- Товар 2 -->
+                    <div class="cart-item" data-price="298">
+                        <button class="cart-item-remove" aria-label="Удалить товар">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                        </button>
+                        <p class="cart-item-name">Single Origin Cashmere Crop...</p>
+                        <p class="cart-item-variant">Apricot / Large</p>
+                        <div class="cart-item-image">
+                            <img src="img/shop6.jpg" alt="Single Origin Cashmere Cropped Sweater">
+                        </div>
+                        <div class="cart-item-qty">
+                            <button class="qty-btn qty-minus" aria-label="Уменьшить количество">−</button>
+                            <span class="qty-value">1</span>
+                            <button class="qty-btn qty-plus" aria-label="Увеличить количество">+</button>
+                        </div>
+                        <div class="cart-item-subtotal">
+                            <span class="label">Subtotal</span>
+                            <span class="value">$298</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cart-empty" id="cartEmpty">Your shopping bag is empty.</div>
+
+                <!-- Order Summary -->
+                <aside class="cart-summary">
+                    <p class="cart-summary-title">Order Summary</p>
+
+                    <div class="cart-summary-row">
+                        <span>Subtotal</span>
+                        <span id="summarySubtotal">$546</span>
+                    </div>
+
+                    <div class="cart-summary-row">
+                        <span>Bag Total</span>
+                        <span id="summaryTotal">$546</span>
+                    </div>
+
+                    <label class="cart-gift-label" for="giftMessage">Add a gift message to your order</label>
+                    <textarea class="cart-gift-textarea" id="giftMessage" placeholder=""></textarea>
+
+                    <p class="cart-note">Shipping &amp; taxes calculated at checkout</p>
+
+                    <button class="cart-checkout-btn">Go To Checkout</button>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!--  WHAT TO WEAR NOW (рекомендации) -->
+    <section class="cart-recommend">
+        <div class="container">
+            <h2 class="cart-recommend-title">What to Wear Now</h2>
+
+            <div class="cart-recommend-grid">
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop1.jpg" alt="Relaxed blazer">
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                    </div>
+                    <p class="product-name">Relaxed blazer</p>
+                    <p class="product-price">$348</p>
+                </a>
+
+                <a href="product.html" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop2.jpg" alt="Alpaca Wool Cropped Cardigan">
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                    </div>
+                    <p class="product-name">Alpaca Wool Cropped Cardigan</p>
+                    <p class="product-price">$248</p>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop3.jpg" alt="Silk Wide-Leg Pant">
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                    </div>
+                    <p class="product-name">Silk Wide-Leg Pant</p>
+                    <p class="product-price">$24</p>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop4.jpg" alt="Classic Pant">
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                    </div>
+                    <p class="product-name">Classic Pant</p>
+                    <p class="product-price">$58</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Колонка 1: Contact Us -->
+                <div class="footer-col">
+                    <p class="footer-col-title">Contact Us</p>
+                    <ul>
+                        <li><a href="tel:+18443266000">+1 (844) 326-6000</a></li>
+                        <li><a href="mailto:info@cein.com">Email Us</a></li>
+                        <li><span class="footer-text">Mon-Fri 9am-3pm PT</span></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 2: Customers -->
+                <div class="footer-col">
+                    <p class="footer-col-title">Customers</p>
+                    <ul>
+                        <li><a href="#">Start a Return</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Catalogs and Mailers</a></li>
+                        <li><a href="#">About Group Gifting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 3: Company -->
+                <div class="footer-col">
+                    <p class="footer-col-title">Company</p>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Discover Revive</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 4: Newsletter -->
+                <div class="footer-col footer-newsletter">
+                    <p class="footer-col-title">Get the latest new from us</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Enter your email address" class="footer-input">
+                        <p class="footer-disclaimer">By signing up, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+                        <button type="submit" class="footer-submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-logo">©CEIN</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Бургер-меню
+        const burger = document.getElementById('burgerBtn');
+        const navLinks = document.getElementById('navLinks');
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Логика корзины 
+        const cartItemsWrap = document.getElementById('cartItems');
+        const cartEmpty = document.getElementById('cartEmpty');
+        const summarySubtotal = document.getElementById('summarySubtotal');
+        const summaryTotal = document.getElementById('summaryTotal');
+        const bagCount = document.getElementById('bagCount');
+
+        function formatPrice(value) {
+            return '$' + value.toFixed(0);
+        }
+
+        function recalcTotals() {
+            const items = cartItemsWrap.querySelectorAll('.cart-item');
+            let subtotal = 0;
+            let totalQty = 0;
+
+            items.forEach((item) => {
+                const price = Number(item.dataset.price);
+                const qty = Number(item.querySelector('.qty-value').textContent);
+                subtotal += price * qty;
+                totalQty += qty;
+            });
+
+            summarySubtotal.textContent = formatPrice(subtotal);
+            summaryTotal.textContent = formatPrice(subtotal);
+            bagCount.textContent = totalQty;
+
+            cartEmpty.classList.toggle('visible', items.length === 0);
+        }
+
+        function bindItem(item) {
+            const qtyValue = item.querySelector('.qty-value');
+            const minusBtn = item.querySelector('.qty-minus');
+            const plusBtn = item.querySelector('.qty-plus');
+            const subtotalValue = item.querySelector('.cart-item-subtotal .value');
+            const removeBtn = item.querySelector('.cart-item-remove');
+            const price = Number(item.dataset.price);
+
+            function updateItemSubtotal() {
+                const qty = Number(qtyValue.textContent);
+                subtotalValue.textContent = formatPrice(price * qty);
+            }
+
+            minusBtn.addEventListener('click', () => {
+                let qty = Number(qtyValue.textContent);
+                if (qty > 1) {
+                    qty -= 1;
+                    qtyValue.textContent = qty;
+                    updateItemSubtotal();
+                    recalcTotals();
+                }
+            });
+
+            plusBtn.addEventListener('click', () => {
+                let qty = Number(qtyValue.textContent);
+                qty += 1;
+                qtyValue.textContent = qty;
+                updateItemSubtotal();
+                recalcTotals();
+            });
+
+            removeBtn.addEventListener('click', () => {
+                item.remove();
+                recalcTotals();
+            });
+        }
+
+        cartItemsWrap.querySelectorAll('.cart-item').forEach(bindItem);
+        recalcTotals();
+    </script>
+</body>
+</html>

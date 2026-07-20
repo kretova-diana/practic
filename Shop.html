@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop — CEIN.</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- ANNOUNCEMENT BAR (ЧЁРНАЯ ПОЛОСА) -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p>
+                Complimentary U.S. No-Rush Shipping on orders of $95 or more.
+                <a href="#">Shop now</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- HEADER (ШАПКА) -->
+    <header class="navbar">
+        <div class="container">
+            <button class="burger" id="burgerBtn">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img src="img/Logo.svg" alt="CEIN.">
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="Shop.html" class="active">Shop</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Journal</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <button class="icon-btn" aria-label="Поиск">
+                    <img src="img/MagnifyingGlass.svg" alt="Поиск" width="22" height="22">
+                </button>
+
+                <a href="#" class="stores-link desktop-only">Stores</a>
+
+                <button class="icon-btn desktop-only" aria-label="Профиль">
+                    <img src="img/UserCircle.svg" alt="Профиль" width="22" height="22">
+                </button>
+
+                <button class="icon-btn icon-with-count" aria-label="Избранное">
+                    <img src="img/Heart.svg" alt="Избранное" width="22" height="22">
+                    <span class="count">0</span>
+                </button>
+
+                <a href="Cart.html" class="icon-btn icon-with-count" aria-label="Корзина">
+                    <img src="img/Bag.svg" alt="Корзина" width="22" height="22">
+                    <span class="count">2</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SHOP HEADER + FILTERS -->
+    <section class="shop-header">
+        <div class="container">
+            <h1 class="shop-title">Shop</h1>
+
+            <div class="shop-toolbar">
+                <div class="filter-pills">
+                    <button class="filter-pill">Outerwear</button>
+                    <button class="filter-pill">Dresses</button>
+                    <button class="filter-pill">Skirts</button>
+                    <button class="filter-pill active">Pants &amp; Leggings</button>
+                    <button class="filter-pill">Stretch</button>
+                    <button class="filter-pill">Lounge</button>
+                </div>
+
+                <div class="shop-sort-filter">
+                    <div class="shop-sort-wrapper" id="sortWrapper">
+                        <button class="shop-sort" id="sortToggle" aria-haspopup="true" aria-expanded="false">
+                            Sort
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+
+                        <div class="shop-sort-backdrop" id="sortBackdrop"></div>
+
+                        <div class="shop-sort-dropdown" id="sortDropdown">
+                            <div class="shop-sort-dropdown-header">
+                                <span class="shop-sort-dropdown-title">Sort</span>
+                                <button class="shop-sort-close" id="sortClose" aria-label="Закрыть">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                                </button>
+                            </div>
+                            <ul class="shop-sort-options">
+                                <li><button class="shop-sort-option active" data-sort="featured">Featured</button></li>
+                                <li><button class="shop-sort-option" data-sort="best-selling">Best selling</button></li>
+                                <li><button class="shop-sort-option" data-sort="price-asc">Price, low to high</button></li>
+                                <li><button class="shop-sort-option" data-sort="price-desc">Price, high to low</button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <span class="shop-filter-link">Filter</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP PRODUCTS GRID -->
+    <section class="shop-products">
+        <div class="container">
+            <div class="shop-products-grid">
+
+                
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop1.jpg" alt="Relaxed blazer">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Beige</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#c9a27a"></span>
+                                <span class="swatch" style="background:#1a1a1a"></span>
+                                <span class="swatch" style="background:#8c8478"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Relaxed blazer</p>
+                    <p class="product-price">$348</p>
+                </a>
+
+              
+                <a href="Product.html" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop2.jpg" alt="Alpaca Wool Cropped Cardigan">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Camel</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#c9a27a"></span>
+                                <span class="swatch" style="background:#8c8478"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Alpaca Wool Cropped Cardigan</p>
+                    <p class="product-price">$248</p>
+                </a>
+
+                
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop3.jpg" alt="Silk Wide-Leg Pant">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Black</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#1a1a1a"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Silk Wide-Leg Pant</p>
+                    <p class="product-price">$24</p>
+                </a>
+
+                
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop4.jpg" alt="Classic Pant">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Black</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#1a1a1a"></span>
+                                <span class="swatch" style="background:#7a7a7a"></span>
+                                <span class="swatch" style="background:#c9a27a"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Classic Pant</p>
+                    <p class="product-price">$58</p>
+                </a>
+
+                
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop5.jpg" alt="Maxi Skirt">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Black</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#1a1a1a"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Maxi Skirt</p>
+                    <p class="product-price">$248</p>
+                </a>
+
+                
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop6.jpg" alt="Single-Origin Cashmere Cropped Sweater">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Rust</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#a5623c"></span>
+                                <span class="swatch" style="background:#c9a27a"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Single-Origin Cashmere Cropped Sweater</p>
+                    <p class="product-price">$298</p>
+                </a>
+
+             
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop7.jpg" alt="Poplin Oversized Shirt">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">White</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#ffffff"></span>
+                                <span class="swatch" style="background:#1a1a1a"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Poplin Oversized Shirt</p>
+                    <p class="product-price">$168</p>
+                </a>
+
+                
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop8.jpg" alt="Cashmere Funnel Neck Sweater">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Cream</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#e8ddd0"></span>
+                                <span class="swatch" style="background:#c9a27a"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Cashmere Funnel Neck Sweater</p>
+                    <p class="product-price">$278</p>
+                </a>
+
+                
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop9.jpg" alt="Cashmere Cardigan">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Cream</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#e8ddd0"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Cashmere Cardigan</p>
+                    <p class="product-price">$248</p>
+                </a>
+
+                
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop10.jpg" alt="Slim Back Slit Turtleneck Tee">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Espresso</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#2b1c17"></span>
+                                <span class="swatch" style="background:#1a1a1a"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Slim Back Slit Turtleneck Tee</p>
+                    <p class="product-price">$118</p>
+                </a>
+
+                
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop11.jpg" alt="Silk Draped Skirt">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Cream</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#e8ddd0"></span>
+                                <span class="swatch" style="background:#1a1a1a"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Silk Draped Skirt</p>
+                    <p class="product-price">$348</p>
+                </a>
+
+                
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/shop12.jpg" alt="Charmeuse Shorts">
+                        <button class="product-heart" aria-label="Добавить в избранное">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12.572 12 20l-7.5-7.428A5 5 0 1 1 12 6.006a5 5 0 1 1 7.5 6.572Z"/></svg>
+                        </button>
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Cream</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#e8ddd0"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Charmeuse Shorts</p>
+                    <p class="product-price">$78</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Колонка 1: Contact Us -->
+                <div class="footer-col">
+                    <p class="footer-col-title">Contact Us</p>
+                    <ul>
+                        <li><a href="tel:+18443266000">+1 (844) 326-6000</a></li>
+                        <li><a href="mailto:info@cein.com">Email Us</a></li>
+                        <li><span class="footer-text">Mon-Fri 9am-3pm PT</span></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 2: Customers -->
+                <div class="footer-col">
+                    <p class="footer-col-title">Customers</p>
+                    <ul>
+                        <li><a href="#">Start a Return</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Catalogs and Mailers</a></li>
+                        <li><a href="#">About Group Gifting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 3: Company -->
+                <div class="footer-col">
+                    <p class="footer-col-title">Company</p>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Discover Revive</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 4: Newsletter -->
+                <div class="footer-col footer-newsletter">
+                    <p class="footer-col-title">Get the latest new from us</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Enter your email address" class="footer-input">
+                        <p class="footer-disclaimer">By signing up, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+                        <button type="submit" class="footer-submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-logo">©CEIN</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Бургер-меню
+        const burger = document.getElementById('burgerBtn');
+        const navLinks = document.getElementById('navLinks');
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Сортировка (Sort) 
+        const sortWrapper = document.getElementById('sortWrapper');
+        const sortToggle = document.getElementById('sortToggle');
+        const sortClose = document.getElementById('sortClose');
+        const sortBackdrop = document.getElementById('sortBackdrop');
+        const sortOptions = document.querySelectorAll('.shop-sort-option');
+
+        function openSort() {
+            sortWrapper.classList.add('open');
+            sortToggle.setAttribute('aria-expanded', 'true');
+            document.body.classList.add('no-scroll');
+        }
+
+        function closeSort() {
+            sortWrapper.classList.remove('open');
+            sortToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('no-scroll');
+        }
+
+        sortToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            sortWrapper.classList.contains('open') ? closeSort() : openSort();
+        });
+
+        sortClose.addEventListener('click', closeSort);
+        sortBackdrop.addEventListener('click', closeSort);
+
+        document.addEventListener('click', (e) => {
+            if (sortWrapper.classList.contains('open') && !sortWrapper.contains(e.target)) {
+                closeSort();
+            }
+        });
+
+        sortOptions.forEach((opt) => {
+            opt.addEventListener('click', () => {
+                sortOptions.forEach((o) => o.classList.remove('active'));
+                opt.classList.add('active');
+                closeSort();
+            });
+        });
+
+        // Клик по сердечку 
+        document.querySelectorAll('.product-heart').forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                btn.classList.toggle('active');
+            });
+        });
+
+        // Клик по кружку цвета 
+        document.querySelectorAll('.product-color-swatches').forEach((group) => {
+            group.querySelectorAll('.swatch').forEach((swatch) => {
+                swatch.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    group.querySelectorAll('.swatch').forEach((s) => s.classList.remove('active'));
+                    swatch.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
