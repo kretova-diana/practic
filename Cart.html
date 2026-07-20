@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEIN. — Practice</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- ANNOUNCEMENT BAR (ЧЁРНАЯ ПОЛОСА) -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p>
+                Complimentary U.S. No-Rush Shipping on orders of $95 or more.
+                <a href="#">Shop now</a>
+            </p>
+        </div>
+    </div>
+
+    <!--HEADER (ШАПКА)  -->
+    <header class="navbar">
+        <div class="container">
+            <button class="burger" id="burgerBtn">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img src="img/Logo.svg" alt="CEIN.">
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Journal</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <button class="icon-btn" aria-label="Поиск">
+                    <img src="img/MagnifyingGlass.svg" alt="Поиск" width="22" height="22">
+                </button>
+
+                <a href="#" class="stores-link desktop-only">Stores</a>
+
+                <button class="icon-btn desktop-only" aria-label="Профиль">
+                    <img src="img/UserCircle.svg" alt="Профиль" width="22" height="22">
+                </button>
+
+                <button class="icon-btn icon-with-count" aria-label="Избранное">
+                    <img src="img/Heart.svg" alt="Избранное" width="22" height="22">
+                    <span class="count">0</span>
+                </button>
+
+                <a href="cart.html" class="icon-btn icon-with-count" aria-label="Корзина">
+                    <img src="img/Bag.svg" alt="Корзина" width="22" height="22">
+                    <span class="count">2</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO (ГЛАВНЫЙ БАННЕР) -->
+    <section class="hero">
+        <img src="img/hero.jpg" alt="Fashion" class="hero-image">
+        <div class="hero-overlay"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Elevate Your Style</h1>
+                <p class="hero-subtitle">Timeless Fashion, Sustainable<br>Choices</p>
+                <a href="#" class="hero-btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOP BY CATEGORY  -->
+    <section class="section categories-section">
+        <div class="container">
+            <div class="categories-intro">
+                <p>Elevate your lifestyle with a more intelligent, superior wardrobe.</p>
+                <p>Our range is crafted sustainably with longevity in mind.</p>
+            </div>
+
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <img src="img/NewArrivals.jpg" alt="New Arrivals">
+                    <span class="category-card-label">New Arrivals</span>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="img/TheCasualEdit.jpg" alt="The Casual Edit">
+                    <span class="category-card-label">The Casual Edit</span>
+                </a>
+                <a href="#" class="category-card">
+                    <img src="img/Best-Sellers.jpg" alt="Best-Sellers">
+                    <span class="category-card-label">Best-Sellers</span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--  WHAT TO WEAR NOW  -->
+    <section class="section products-section">
+        <div class="container">
+            <h2 class="products-title">What to Wear Now</h2>
+
+            <div class="products-grid">
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/image1.jpg" alt="Classic Easy Zipper Tote">
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Olive</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#5c5a4a"></span>
+                                <span class="swatch" style="background:#1a1a1a"></span>
+                                <span class="swatch" style="background:#c9a27a"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Classic Easy Zipper Tote</p>
+                    <p class="product-price">$298</p>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/image2.jpg" alt="Concertina Phone Bag">
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Black</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#1a1a1a"></span>
+                                <span class="swatch" style="background:#7a5c3e"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Concertina Phone Bag</p>
+                    <p class="product-price">$248</p>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/image3.jpg" alt="Wool Cashmere Sweater Coat">
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Camel</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#c9a27a"></span>
+                                <span class="swatch" style="background:#1a1a1a"></span>
+                                <span class="swatch" style="background:#e5c9c9"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Wool Cashmere Sweater Coat</p>
+                    <p class="product-price">$398</p>
+                </a>
+
+                <a href="#" class="product-card">
+                    <div class="product-image">
+                        <img src="img/image4.jpg" alt="Single-Origin Cashmere Beanie">
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Camel</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#c9a27a"></span>
+                                <span class="swatch" style="background:#1a1a1a"></span>
+                                <span class="swatch" style="background:#eec3cc"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Single-Origin Cashmere Beanie</p>
+                    <p class="product-price">$98</p>
+                </a>
+
+                <a href="product.html" class="product-card">
+                    <div class="product-image">
+                        <img src="img/image5.jpg" alt="Alpaca Wool Cropped Cardigan">
+                        <button class="product-add" aria-label="Добавить в корзину">+</button>
+                        <div class="product-colors">
+                            <p class="product-color-name">Camel</p>
+                            <div class="product-color-swatches">
+                                <span class="swatch active" style="background:#c9a27a"></span>
+                                <span class="swatch" style="background:#8c8478"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="product-name">Alpaca Wool Cropped Cardigan</p>
+                    <p class="product-price">$248</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE SMART CHIC / READY TO GO  -->
+    <section class="section smart-banner">
+        <div class="container">
+            <div class="smart-banner-grid">
+                <a href="#" class="category-card smart-banner-card">
+                    <img src="img/smart-chic.jpg" alt="The Smart Chic">
+                    <span class="category-card-label">The Smart Chic</span>
+                </a>
+                <a href="#" class="category-card smart-banner-card">
+                    <img src="img/ready-to-go.jpg" alt="Ready To Go">
+                    <span class="category-card-label">Ready To Go</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE ART OF FEWER, BETTER CHOICES -->
+    <section class="fewer-choices">
+        <div class="container">
+            <h2 class="fewer-choices-title">The Art of Fewer, Better Choices</h2>
+            <p class="fewer-choices-text">Opting for quality over quantity means selecting timeless, durable, and responsibly made items. This approach simplifies our lives and fosters a deeper appreciation for our surroundings. Emphasizing longevity and responsible production resonates with a more sustainable and mindful lifestyle.</p>
+        </div>
+    </section>
+
+    <!-- SHOP INSTAGRAM -->
+    <section class="section instagram-section">
+        <div class="container">
+            <h2 class="instagram-title">Shop Instagram</h2>
+
+            <div class="instagram-grid">
+                <a href="#" class="instagram-card">
+                    <img src="img/inst1.jpg" alt="Instagram">
+                    <span class="instagram-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="18" cy="6" r="1"/></svg>
+                    </span>
+                </a>
+                <a href="#" class="instagram-card">
+                    <img src="img/inst2.jpg" alt="Instagram">
+                    <span class="instagram-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="18" cy="6" r="1"/></svg>
+                    </span>
+                </a>
+                <a href="#" class="instagram-card">
+                    <img src="img/inst3.jpg" alt="Instagram">
+                    <span class="instagram-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="18" cy="6" r="1"/></svg>
+                    </span>
+                </a>
+                <a href="#" class="instagram-card">
+                    <img src="img/inst4.jpg" alt="Instagram">
+                    <span class="instagram-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="18" cy="6" r="1"/></svg>
+                    </span>
+                </a>
+                <a href="#" class="instagram-card">
+                    <img src="img/inst5.jpg" alt="Instagram">
+                    <span class="instagram-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="18" cy="6" r="1"/></svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Колонка 1: Contact Us -->
+                <div class="footer-col">
+                    <p class="footer-col-title">Contact Us</p>
+                    <ul>
+                        <li><a href="tel:+18443266000">+1 (844) 326-6000</a></li>
+                        <li><a href="mailto:info@cein.com">Email Us</a></li>
+                        <li><span class="footer-text">Mon-Fri 9am-3pm PT</span></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 2: Customers -->
+                <div class="footer-col">
+                    <p class="footer-col-title">Customers</p>
+                    <ul>
+                        <li><a href="#">Start a Return</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Catalogs and Mailers</a></li>
+                        <li><a href="#">About Group Gifting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 3: Company -->
+                <div class="footer-col">
+                    <p class="footer-col-title">Company</p>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Discover Revive</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 4: Newsletter -->
+                <div class="footer-col footer-newsletter">
+                    <p class="footer-col-title">Get the latest new from us</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Enter your email address" class="footer-input">
+                        <p class="footer-disclaimer">By signing up, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.</p>
+                        <button type="submit" class="footer-submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-logo">©CEIN</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Бургер-меню
+        const burger = document.getElementById('burgerBtn');
+        const navLinks = document.getElementById('navLinks');
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
